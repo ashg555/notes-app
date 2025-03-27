@@ -1,0 +1,22 @@
+<%- include('layout', {title: title, page: 'home'}); %>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>Here's a preview of your notes:</p>
+
+    <div id="notes-preview">
+      <% notes.forEach(note => { %>
+        <div class="note" style="background-color: <%= note.color %>;">
+          <strong><%= note.title %></strong>
+          <% if (note.starred === 'on') { %>&star;<% } %>
+          <br/> 
+          <%= note.body.slice(0, 20) %> 
+          <br/> 
+          <br/>
+          Last updated: <%= note.updatedAt %>
+        </div>
+      <% }); %>
+    </div>
+
+
+  </body>
+</html>

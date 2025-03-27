@@ -1,0 +1,31 @@
+<%- include('layout', {title: title, page: 'view' }); %>
+
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <form id='searchBar' method="get" action="/search">
+      <label for="search">Search:</label>
+      <input type="text" id="search" name="search" required autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+
+    <ul id="notes">
+      <% notes.forEach(note => { %>
+        <li style="background-color: <%= note.color %>;">
+          <strong><%= note.title %></strong>
+          <% if (note.starred === 'on') { %>&star;<% } %>
+          <br/> 
+          <%= note.body %> 
+          <br/> 
+          <br/>
+          <%= note.createdAt %> - <%= note.updatedAt %>
+          <br/>
+          <a href="/edit/<%= note.id %>">Edit</a>
+          <a href="/delete/<%= note.id %>">Delete</a>
+          <a href="/star/<%= note.id %>">Star</a>
+         </li>
+      <% }); %>
+    </ul>
+
+  </body>
+</html>
