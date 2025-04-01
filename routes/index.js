@@ -41,7 +41,8 @@ router.post('/add', function(req, res, next) {
 
   saveJSON();
 
-  res.render('add', { title: 'Add Another Note', notes: jsonData });
+  // res.render('add', { title: 'Add Another Note', notes: jsonData });
+  res.redirect('/add');
 });
 
 /* GET delete page. */

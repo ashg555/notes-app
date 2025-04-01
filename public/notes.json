@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "title": "Testing Date",
+    "body": "Yay, date fixed!",
+    "color": "#fff1a8",
+    "createdAt": "3/27/2025, 8:42:40 AM",
+    "updatedAt": "3/27/2025, 9:08:48 AM",
+    "starred": "on"
+  },
+  {
+    "id": 2,
+    "title": "Note 2",
+    "body": "Test",
+    "color": "#ffe5e5",
+    "createdAt": "3/27/2025, 8:42:50 AM",
+    "updatedAt": "3/27/2025, 8:42:50 AM",
+    "starred": "on"
+  },
+  {
+    "id": 3,
+    "title": "Blue",
+    "body": "Hi :)",
+    "color": "#c8ddfe",
+    "createdAt": "3/27/2025, 8:52:38 AM",
+    "updatedAt": "3/27/2025, 8:52:38 AM"
+  },
+  {
+    "id": 4,
+    "title": "Yay, notes are working",
+    "body": "Hi",
+    "color": "#e0ffeb",
+    "createdAt": "3/27/2025, 9:30:43 AM",
+    "updatedAt": "3/27/2025, 9:30:43 AM",
+    "starred": "on"
+  }
+]
